@@ -1,5 +1,139 @@
+* {
+    font-family: 'noto sans';
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+
+    -webkit-font-smothing: antialiased;
+    -moz-osx-font-smothing: grayscale;
+}
+
+:root{
+    --primary-color: hsl(220, 15%, 20%);
+    --secundary-color: hsl(8, 67%, 52%);
+    --primary-color-button: hsl(187, 61%, 74%);
+    --secundary-color-button: hsl(240, 3%, 40%);
+    --text-color-prymary: hsl(222, 32%, 8%);
+    --text-color-secundary: hsl(0, 0%, 62%);
+
+}
+
+html{
+    font-size: 62.5%; /* 1rem = 10px */
+    overflow-x: hidden;
+    
+}
+
+a{
+    color: var(--primary-color);
+    font-size: 1.6rem;
+}
+
+h2{
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
 header{
-    background: red;
-    height: 80px;
+    position: sticky;
+    top: 0;
+    padding: 0.8rem;
+    box-shadow: hsl(0deg 0% 0% / 25%) 0 1px;
+}
+
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+.content-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo span{
+    padding-inline: 16px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.search-label{
+    z-index: 2;
+    position: relative;
+}
+
+form{
+    display: flex;
     width: 100%;
+}
+
+.text-normal{
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--text-color-secundary);
+}
+
+.visually-hidden{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.TextInputWrapper{
+    background-repeat: no-repeat;
+    background-position: right 0.8rem center;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    height: 2rem;
+    transition: width 0.3s ease-in-out;
+    border-bottom-right-radius: unset;
+    border-top-right-radius: unset;
+    border-radius: none;
+    min-width: 15rem;
+
+    line-height: 2rem;
+    color: red;
+    vertical-align: middle;
+    background-color: var(--text-color-secundary);
+    box-shadow: red;
+    display: inline-flex;
+    align-items: stretch;
+    min-height: 32px;
+    border-radius: 6px 6px;
+    outline: none;
+    overflow: hidden;
+}
+
+.search{
+    padding-left: 12px;
+    padding-right: 12px;
+    cursor: text;
+
+    border: 0;
+    font-size: inherit;
+    background-color: transparent;
+    appearance: none;
+    color: inherit;
+    /*width: 100%;*/
 }
